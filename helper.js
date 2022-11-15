@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import ObjectsToCsv from 'objects-to-csv';
 import {} from 'dotenv/config';
 
 export const searchArtist = async (artistName) => {
@@ -29,3 +30,13 @@ export const searchArtist = async (artistName) => {
     console.error('Something is wrong with searchArtist function:', e);
   }
 }
+
+export const writeToCsv = async (arr) => {
+	try {
+		const csv = new ObjectsToCsv(arr);
+		await csv.toDisk('./artists.csv', { append: true });
+		console.log('successfully written information to CSV file.');
+	} catch (e) {
+		console.error('something is wrong writing to CSV file:', e);
+	}
+};
