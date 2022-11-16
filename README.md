@@ -52,3 +52,9 @@ Two logs will follow if nothing happens and there will be a prompt asking for us
 <img width="420" alt="Screenshot 2022-11-16 at 16 33 30" src="https://user-images.githubusercontent.com/88963740/202223801-61f02406-3949-4db2-8e69-cfc47bcdf3ab.png">
 
 The question will be repeated after each search but if you wish to exit the program, simply key in 'n' and press enter to do so.
+
+### FINAL RESULT
+
+A CSV file with user-supplied filename will be created on the project's directory.
+
+<img width="1391" alt="Screenshot 2022-11-16 at 16 41 51" src="https://user-images.githubusercontent.com/88963740/202225932-b591b4f2-80fc-4ada-abf6-ef2d3c405924.png">
