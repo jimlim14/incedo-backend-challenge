@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 });
 
 while (true) {
-	const answer = await rl.question('Enter an artist (press n to exit): ');
+	const answer = await rl.question('Search for an artist (press n to exit): ');
 		
 	if (answer === 'n') {
 		rl.close();
@@ -15,6 +15,7 @@ while (true) {
 	} else {
 		const artistInfo = await searchArtist(answer);
 		await writeToCsv(artistInfo);
+		
 	}
 }
 
