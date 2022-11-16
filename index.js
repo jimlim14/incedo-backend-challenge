@@ -2,14 +2,20 @@ import * as readline from 'node:readline/promises';
 import { searchArtist, writeToCsv } from './helper.js';
 
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
+	input: process.stdin,
+	output: process.stdout,
 });
 
-const artistName = await rl.question('Enter artist name: ');
+while (true) {
+	const answer = await rl.question('Enter an artist (press n to exit): ');
+		
+	if (answer === 'n') {
+		rl.close();
+		process.exit(0);
+	} else {
+		const artistInfo = await searchArtist(answer);
+		await writeToCsv(artistInfo);
+	}
+}
 
-rl.close();
 
-const artistInfo = await searchArtist(artistName);
-
-await writeToCsv(artistInfo);
