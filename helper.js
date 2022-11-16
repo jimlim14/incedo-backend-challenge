@@ -35,7 +35,7 @@ export const searchArtist = async (artistName) => {
 				}
 			});
 		} else {
-			console.log('-> no results return from endpoint search.artist, retrieving random artist from local JSON dictionary.');
+			console.log('-> no results returned from endpoint search.artist, retrieving random artist from local JSON dictionary.');
       artistInfo.name = randomArtist();
     }
 		console.log('-> successfully structured artist information');
