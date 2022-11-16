@@ -1,6 +1,10 @@
 # incedo-backend-challenge
 
-This is a Incedo Backend Challenge built with [Node.Js](https://nodejs.org/en/)
+This is a Incedo Backend Challenge built with [Node.Js](https://nodejs.org/en/).
+Extra dependencies used for this challenge:
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [node-fetch](https://www.npmjs.com/package/node-fetch)
+* [objects-to-csv](https://www.npmjs.com/package/objects-to-csv)
 
 ## Instructions
 
@@ -15,3 +19,7 @@ Write a Node.js REST API application that handles the following:
 ['artistName1', 'artistName2', 'artistName3']
 
 Repeat as necessary until you have gathered a list of artists.
+
+_Though this is a small app, please pay attention to your application structure.
+Host your code on github or bitbucket and include a README with instructions on
+how to install and run your application._
