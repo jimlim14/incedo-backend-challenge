@@ -43,4 +43,6 @@ Simply run the code below to begin searching for an artist:
 node index.js
 ```
 
-The question will be repeated after each search but if you wish to exit the program, simply key in 'n' and press enter to exit. 
+Searh your artist by typing the name directly on the prompt.
+
+The question will be repeated after each search but if you wish to exit the program, simply key in 'n' and press enter to do so.
