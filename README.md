@@ -43,6 +43,8 @@ Simply run the code below to begin searching for an artist:
 node index.js
 ```
 
-Searh your artist by typing the name directly on the prompt.
+Search your artist by typing the name directly on the prompt like so:
+
+<img width="401" alt="Screenshot 2022-11-16 at 16 29 38" src="https://user-images.githubusercontent.com/88963740/202222988-47928338-35b7-417c-a6a6-6540907cbc2e.png">
 
 The question will be repeated after each search but if you wish to exit the program, simply key in 'n' and press enter to do so.
