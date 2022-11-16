@@ -1,6 +1,6 @@
 # incedo-backend-challenge
 
-This is a Incedo Backend Challenge built with [Node.Js](https://nodejs.org/en/).
+This is a Incedo Backend Challenge built with [Node.Js](https://nodejs.org/en/).<br />
 Extra dependencies used for this challenge:
 * [dotenv](https://www.npmjs.com/package/dotenv)
 * [node-fetch](https://www.npmjs.com/package/node-fetch)
