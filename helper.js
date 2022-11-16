@@ -22,7 +22,7 @@ export const searchArtist = async (artistName) => {
       image: '',
     };
     if (Object.keys(data).length !== 0) {
-			console.log('-> successfully retrieved data from endpoint artist.search', data);
+			console.log('-> successfully retrieved data from endpoint artist.search');
 			const artist = data.results.artistmatches.artist[0];
 			artistInfo.name = artist.name;
 			artistInfo.mbid = artist.mbid;
@@ -45,10 +45,10 @@ export const searchArtist = async (artistName) => {
   }
 }
 
-export const writeToCsv = async (arr) => {
+export const writeToCsv = async (arr, fileName) => {
 	try {
 		const csv = new ObjectsToCsv(arr);
-		await csv.toDisk('./artists.csv', { append: true });
+		await csv.toDisk(fileName, { append: true });
 		console.log('-> successfully written artist information to CSV file.\n');
 	} catch (e) {
 		console.error('something is wrong writing to CSV file:', e);
