@@ -23,3 +23,24 @@ Repeat as necessary until you have gathered a list of artists.
 _Though this is a small app, please pay attention to your application structure.
 Host your code on github or bitbucket and include a README with instructions on
 how to install and run your application._
+
+### GETTING STARTED
+
+First, clone this repository, cd to project's directory and install the dependencies either by npm or yarn:
+
+```bash
+git clone https://github.com/jimlim14/incedo-backend-challenge.git
+cd incedo-backend-challenge
+
+npm install
+or
+yarn install
+```
+
+Simply run the code below to begin searching for an artist:
+
+```bash
+node index.js
+```
+
+The question will be repeated after each search but if you wish to exit the program, simply key in 'n' and press enter to exit. 
