@@ -13,16 +13,16 @@ export const searchArtist = async (artistName) => {
     const url = `https://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${artistName}&api_key=${process.env.LAST_FM_API_KEY}&format=json`;
     const res = await fetch(url);
     const data = await res.json();
-		console.log('-> successfully retrieved data from endpoint artist.search', data);
     
     let artistInfo = {
-      name: '',
+			name: '',
       mbid: '',
       url: '',
       image_small: '',
       image: '',
     };
     if (Object.keys(data).length !== 0) {
+			console.log('-> successfully retrieved data from endpoint artist.search', data);
 			const artist = data.results.artistmatches.artist[0];
 			artistInfo.name = artist.name;
 			artistInfo.mbid = artist.mbid;
@@ -35,6 +35,7 @@ export const searchArtist = async (artistName) => {
 				}
 			});
 		} else {
+			console.log('-> no results return from endpoint search.artist, retrieving random artist from local JSON dictionary.');
       artistInfo.name = randomArtist();
     }
 		console.log('-> successfully structured artist information');
