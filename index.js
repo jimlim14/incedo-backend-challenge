@@ -20,6 +20,7 @@ while (true) {
 		await writeToCsv(artistInfo, fileName);
   
 	}
+	console.log('test');
 }
 
 
